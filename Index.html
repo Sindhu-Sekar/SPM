@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="stylesheets/style.css">-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <title>Pet Grooming System</title>
 </head>
 <body>
+<h1> Welcome to Pet Grooming System</h1>
 <div class="wrapper">
     <div class="tab">
         <button class="tablinks active" data-val="signup">Sign Up</button>
@@ -14,7 +15,7 @@
     </div>
 
     <div id="signup" class="tabcontent" style="display: block;">
-        <form id='register-form' method='post'>
+        <form id='register-form'>
             <table>
                 <tr>
                     <td>UserName</td>
@@ -46,12 +47,12 @@
     </div>
 
     <div id="login" class="tabcontent" style="display: none;">
-        <form id="login-form" method="post">
+        <form id="login-form">
             <table>
                 <tr>
                     <td>UserName</td>
                     <td>
-                        <input type="text" id="login-username" value="ant" placeholder="Username" required/>
+                        <input type="text" id="login-username" placeholder="Username" required/>
                     </td>
                 </tr>
 
@@ -69,12 +70,9 @@
     </div>
 </div>
 
-<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+<script src="lib/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<!--<script src="javascript/loginSignup.js"></script>-->
+<script src="javascript/loginSignup.js"></script>
 
 </body>
 </html>

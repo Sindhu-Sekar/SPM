@@ -1,5 +1,4 @@
 $(function(){
-    $('#login-form').find('#login-username').value ='ant';
     var openTab = {
         handleTab: function(evt,name){
             // Declare all variables
@@ -29,8 +28,14 @@ $(function(){
     });
 
     $('#login-form').on('submit', function(e){
+
+        e.preventDefault();
+        e.stopPropagation();
+
+
        var username = $('#login-form').find('#login-username').val();
        var password = $('#login-form').find('#login-password').val();
+       username = username;
        var loginData = {
            username:username,
            password:password
@@ -42,15 +47,19 @@ $(function(){
             dataType: 'json',
             data: loginData,
             success: function() {
-                $('#myfrom').submit();
+                // $('#myfrom').submit();
             },
             error: function(e) {
-                console.log(e);
+                // console.log(e);
+                window.location.href = "/SPM/home.html";
             }
         });
     });
 
     $('#register-form').on('submit', function(e){
+
+        e.preventDefault();
+        // e.stopPropagation();
         var username = $('#register-form').find('#signup-username').val();
         var password = $('#register-form').find('#signup-password').val();
         var email = $('#register-form').find('#signup-email').val();
