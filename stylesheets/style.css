@@ -1,4 +1,8 @@
-
+body{
+    background-image:url('resources/pet1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .wrapper {
     position: absolute;
@@ -6,9 +10,12 @@
     top: 45%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    height: 200px;
-    width: 400px;
-    border: 1px solid #ccc;
+    height: 250px;
+    width: 500px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+
+    background: white;
 }
 
 /* Style the tab */
@@ -28,7 +35,7 @@
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    width: 198px;
+    width: 50%;
 }
 
 td {
@@ -100,4 +107,14 @@ tr {
 .tabcontent {
     display: none;
     padding: 6px 12px;
+}
+
+#register-form{
+    padding: 5px;
+}
+
+#register-form .button-block,#login .button-block {
+    position: relative;
+    left: 43%;
+    margin-top:10px;
 }
