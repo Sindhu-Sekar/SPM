@@ -1,0 +1,140 @@
+<div class="clientDetails">
+    <form role="form">
+        <!--<h3>Client Details</h3>-->
+        <div class="col-sm-6">
+            <div class="control-group">
+                <label for="firstName" class="col-sm-4 control-label">Full Name</label>
+                <div class="col-sm-8 controls">
+                    <input type="text" id="firstName" placeholder="Full Name" autofocus>
+                </div>
+            </div>
+            <!-- address-line1 input-->
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Address Line 1</label>
+                <div class="col-sm-8 controls">
+                    <input id="address-line1" name="address-line1" type="text" placeholder="Street address, P.O. box, company name, c/o"
+                           class="input-xlarge">
+                    <!--<p class="help-block">Street address, P.O. box, company name, c/o</p>-->
+                </div>
+            </div>
+            <!-- address-line2 input-->
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Address Line 2</label>
+                <div class="col-sm-8 controls">
+                    <input id="address-line2" name="address-line2" type="text" placeholder="Apartment, suite , unit, building, floor, etc."
+                           class="input-xlarge">
+                    <!--<p class="help-block"></p>-->
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Suburb</label>
+                <div class="col-sm-8 controls">
+                    <input id="suburb" name="suburb" type="text" placeholder="Suburb" class="input-xlarge">
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <!-- region input-->
+            <div class="control-group">
+                <label class="col-sm-4 control-label">State / Province / Region</label>
+                <div class="col-sm-8 controls">
+                    <input id="region" name="region" type="text" placeholder="state / province / region"
+                           class="input-xlarge">
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <!-- postal-code input-->
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Zip / Postal Code</label>
+                <div class="col-sm-8 controls">
+                    <input id="postal-code" name="postal-code" type="number" placeholder="zip or postal code"
+                           class="input-xlarge">
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Mobile Number</label>
+                <div class="col-sm-8 controls">
+                    <input id="mobileNumber" name="mobileNumber" type="number" placeholder="61(number)"
+                           class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Home Number</label>
+                <div class="col-sm-8 controls">
+                    <input id="homeNumber" name="homeNumber" type="number" placeholder="61(number)"
+                           class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Work Phone Number</label>
+                <div class="col-sm-8 controls">
+                    <input id="workNumber" name="workNumber" type="number" placeholder="61(number)"
+                           class="input-xlarge">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="noOfDogs" class="col-sm-4 control-label">No of dogs</label>
+                <div class="col-sm-8 controls">
+                    <select class="form-control" id="noOfDogs">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group control-group">
+            <div class="col-sm-3 col-sm-offset-5">
+                <button type="submit" id="saveBtn" class="btn btn-primary btn-block">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/html">
+    <div class="accordion">
+        <h4 class="accordion-toggle">Add Dog 1 details here</h4>
+        <div class="accordion-content">
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Dog Name</label>
+                <div class="col-sm-8 controls">
+                    <input id="dogName1" name="dogName" type="text" placeholder="Name"
+                           class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Breed</label>
+                <div class="col-sm-8 controls">
+                    <input id="breed1" name="breed" type="text" placeholder="Breed"
+                           class="input-xlarge">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="col-sm-4 control-label">Date of Birth</label>
+                <div class="col-sm-8 controls">
+                    <input id="dateOfBirth1" name="dateOfBirth" type="date" placeholder="01/01/2000"
+                           class="input-xlarge">
+                </div>
+            </div>
+        </div>
+
+        <h4 class="accordion-toggle">Add Dog 2 details here</h4>
+        <div class="accordion-content">
+            <p>
+                Lorem ipsum dolor sit amet mauris eu turpis.
+            </p>
+        </div>
+
+        <h4 class="accordion-toggle">Add dog 3 details here</h4>
+        <div class="accordion-content">
+            <p>
+                Vivamus facilisisnibh scelerisque laoreet.
+            </p>
+        </div>
+    </div>
+
+</script>

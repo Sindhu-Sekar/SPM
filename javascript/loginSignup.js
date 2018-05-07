@@ -33,11 +33,11 @@ $(function(){
         e.stopPropagation();
 
 
-       var username = $('#login-form').find('#login-username').val();
+       var email = $('#login-form').find('#login-email').val();
        var password = $('#login-form').find('#login-password').val();
        username = username;
        var loginData = {
-           username:username,
+           email:email,
            password:password
        };
        console.log(e);
@@ -59,12 +59,9 @@ $(function(){
     $('#register-form').on('submit', function(e){
 
         e.preventDefault();
-        // e.stopPropagation();
-        var username = $('#register-form').find('#signup-username').val();
         var password = $('#register-form').find('#signup-password').val();
         var email = $('#register-form').find('#signup-email').val();
         var signupData = {
-            username:username,
             password:password,
             email:email
         };

@@ -8,25 +8,32 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a id="welcomeUsername" class="navbar-brand" href="#">Welcome </a>
+<div class="mainContainer">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="welcomeUsername" class="navbar-brand" href="#">Welcome </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active navHead" data-val="clientInformation"><a href="#">Client Information</a></li>
+                <li class="navHead" data-val="bookAppointment"><a href="#">Book Appointments</a></li>
+            </ul>
+            <div class="pull-right">
+                <a class="navbar-brand logout" href=../SPM/Index.html>Log out</a>
+            </div>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Book Appointments</a></li>
-        </ul>
-        <div class="pull-right">
-            <a class="navbar-brand logout" href=../SPM/Index.html>Log out</a>
+    </nav>
+
+    <div class="container">
+        <div id = "clientInformation" class="navContent">
+
+        </div>
+        <div id = "bookAppointment" class=navContent">
+
         </div>
     </div>
-</nav>
-
-<div class="container">
-    <h3>Client details</h3>
 </div>
+
 <script src="lib/jquery.js"></script>
 <script src="javascript/homePage.js"></script>
 </body>

@@ -1,9 +1,15 @@
 body{
-    background-image:url('resources/dogBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
     color: white;
     font-family: cursive;
+}
+
+.mainContainer {
+    /*background-image:url('resources/dogBackground.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+    /*height: 100vh;*/
 }
 h1 {
     font-size: xx-large;
@@ -107,3 +113,37 @@ input:-webkit-autofill {
     background-color: #666666;
     color: #f2f2f2;
 }
+
+#saveBtn {
+    margin-top: 15px;
+}
+.container {
+    margin-left:40px;
+
+}
+
+*[role="form"] h3 {
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.clientDetails input {
+    width: 350px;
+}
+.clientDetails select {
+    background-color: black;
+    color: white;
+}
+.clientDetails option {
+    color: white;
+}
+.clientDetails .control-label {
+    margin-top: 15px;
+}
+
+.accordion{width:500px; margin: 0 auto;}
+.accordion-toggle {border-bottom: 1px solid #cccccc;cursor: pointer;margin: 0;padding: 10px 0;position: relative;}
+.accordion-toggle.active:after{position:absolute;right:0;top:17px;width:0;height:0;border-bottom:5px solid #f00;border-left:5px solid rgba(0,0,0,0);border-right:5px solid rgba(0,0,0,0);}
+.accordion-toggle:before{position:absolute;right:0;top:17px;width:0;height:0;border-top:5px solid #000;border-left:5px solid rgba(0,0,0,0);border-right:5px solid rgba(0,0,0,0);}
+.accordion-toggle.active:before{display:none;}
+.accordion-content {display: none;}
+.accordion-toggle.active {color: #ff0000;}
